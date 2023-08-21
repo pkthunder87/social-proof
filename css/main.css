@@ -25,11 +25,14 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 80rem;
+  width: 144rem;
+  background-repeat: var(--color-white);
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
+  color: var(--color-dark-magenta);
   text-align: left;
+  -webkit-font-smoothing: antialiased;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,27 +49,89 @@ body {
 }
 
 .social-proof {
-  height: 80vh;
-  width: 80vw;
+  height: 58rem;
+  width: 114rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1.9fr;
   grid-template-rows: 1fr 1fr;
 }
 .social-proof .proof-text__title {
-  font-size: 2.4rem;
+  font-size: 5.5rem;
+  letter-spacing: -2px;
+  word-spacing: 2px;
+  line-height: 0.9em;
   color: var(--color-very-dark-magenta);
   font-weight: 700;
 }
-.social-proof .user-review__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.social-proof .proof-text__body {
+  margin-top: 2.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.35em;
+  word-spacing: -1px;
 }
+.social-proof .proof-user-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--color-white);
+  grid-column: span 2;
+}
+.social-proof .user-review .user-review {
+  height: 23.3rem;
+  width: 34.9rem;
+  display: grid;
+  grid-template-columns: 0.6fr 1.2fr 1.2fr;
+  grid-template-rows: 0.8fr 2.2fr;
+  background-color: var(--color-very-dark-magenta);
+  padding: 3rem;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-proof .user-review .user-review__2 {
+  margin-top: 1.6rem;
+}
+.social-proof .user-review .user-review__3 {
+  margin-top: 3.2rem;
+}
+.social-proof .user-review__top {
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+.social-proof .user-review__top img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 200px;
+}
+.social-proof .user-review__text {
+  margin-top: 1rem;
+  grid-column: span 2;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-left: 0.8rem;
+  line-height: 1.2em;
+}
+.social-proof .user-review__text-buyer {
+  color: var(--color-pink);
+  font-weight: 500;
+}
+.social-proof .user-review__bot {
+  margin-top: 2rem;
+  grid-column: span 3;
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   position: absolute;
-  bottom: 12rem;
+  bottom: -4rem;
+  color: var(--color-very-dark-magenta);
 }
 @media only screen and (max-width: 950px) {
   .attribution {

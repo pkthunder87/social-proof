@@ -31,12 +31,15 @@ html {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 80rem;
+  width: 144rem;
+  background-repeat: var(--color-white);
 
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
+  color: var(--color-dark-magenta);
   text-align: left;
+  -webkit-font-smoothing: antialiased;
 
   display: flex;
   flex-direction: column;
