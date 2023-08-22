@@ -33,6 +33,7 @@ body {
   color: var(--color-dark-magenta);
   text-align: left;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,11 +50,14 @@ body {
 }
 
 .social-proof {
-  height: 58rem;
+  height: 64rem;
   width: 114rem;
   display: grid;
   grid-template-columns: 1.2fr 1.9fr;
   grid-template-rows: 1fr 1fr;
+}
+.social-proof .proof-text {
+  margin-top: 2rem;
 }
 .social-proof .proof-text__title {
   font-size: 5.5rem;
@@ -70,7 +74,43 @@ body {
   line-height: 1.35em;
   word-spacing: -1px;
 }
+.social-proof .proof-stars {
+  margin-top: 3.5rem;
+}
+.social-proof .proof-stars .proof-stars__box {
+  width: 44.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.8rem 3.6rem;
+  background-color: var(--color-light-magenta);
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  border-radius: 10px;
+}
+.social-proof .proof-stars__1 {
+  margin-left: 14rem;
+}
+.social-proof .proof-stars__2 {
+  margin-left: 18rem;
+}
+.social-proof .proof-stars__3 {
+  margin-left: 22.5rem;
+}
+.social-proof .proof-stars__icon img {
+  margin-right: 3px;
+}
+.social-proof .proof-stars__text {
+  color: var(--color-very-dark-magenta);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
 .social-proof .proof-user-reviews {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: var(--color-white);

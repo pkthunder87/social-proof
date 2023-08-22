@@ -1,13 +1,15 @@
 @use "base";
 
 .social-proof {
-  height: 58rem;
+  height: 64rem;
   width: 114rem;
   display: grid;
   grid-template-columns: 1.2fr 1.9fr;
   grid-template-rows: 1fr 1fr;
 
   .proof-text {
+    margin-top: 2rem;
+
     &__title {
       font-size: 5.5rem;
       letter-spacing: -2px;
@@ -27,13 +29,47 @@
   }
 
   .proof-stars {
+    margin-top: 3.5rem;
+
+    .proof-stars__box {
+      width: 44.5rem;
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+
+      padding: 1.8rem 3.6rem;
+      background-color: var(--color-light-magenta);
+      margin-top: 1.8rem;
+      margin-bottom: 1.8rem;
+      border-radius: 10px;
+    }
+
+    &__1 {
+      margin-left: 14rem;
+    }
+
+    &__2 {
+      margin-left: 18rem;
+    }
+
+    &__3 {
+      margin-left: 22.5rem;
+    }
+
     &__icon {
+      img {
+        margin-right: 3px;
+      }
     }
     &__text {
+      color: var(--color-very-dark-magenta);
+      font-weight: 700;
+      font-size: 1.7rem;
     }
   }
 
   .proof-user-reviews {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: var(--color-white);
