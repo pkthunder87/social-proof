@@ -40,10 +40,16 @@ body {
   color: var(--color-dark-magenta);
   text-align: left;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-white);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+
+  background-position-x: 0%, right;
+  background-position-y: 0%, bottom;
+  background-repeat: no-repeat;
 }

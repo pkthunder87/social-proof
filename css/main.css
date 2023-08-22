@@ -33,7 +33,6 @@ body {
   color: var(--color-dark-magenta);
   text-align: left;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +46,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  background-position-x: 0%, right;
+  background-position-y: 0%, bottom;
+  background-repeat: no-repeat;
 }
 
 .social-proof {
@@ -170,12 +173,12 @@ body {
   font-size: 11px;
   text-align: center;
   position: absolute;
-  bottom: -4rem;
+  bottom: 0;
   color: var(--color-very-dark-magenta);
 }
 @media only screen and (max-width: 950px) {
   .attribution {
-    bottom: 4rem;
+    bottom: -8rem;
   }
 }
 @media only screen and (max-width: 400px) {
