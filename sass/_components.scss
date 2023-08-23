@@ -7,6 +7,15 @@
   grid-template-columns: 1.2fr 1.9fr;
   grid-template-rows: 1fr 1fr;
 
+  @include base.query(base.$bp-phone) {
+    margin-top: 8rem;
+    height: 150rem;
+    width: 37.5rem;
+    grid-template-columns: 42rem;
+    grid-template-rows: 1fr 1fr 3fr;
+    margin-left: -3rem;
+  }
+
   .proof-text {
     margin-top: 2rem;
 
@@ -42,10 +51,23 @@
       margin-top: 1.8rem;
       margin-bottom: 1.8rem;
       border-radius: 10px;
+
+      @include base.query(base.$bp-phone) {
+        flex-direction: column;
+        width: 40rem;
+        margin: 2rem 0;
+        gap: 1rem;
+        padding: 2rem;
+        justify-content: center;
+      }
     }
 
     &__1 {
       margin-left: 14rem;
+
+      @include base.query(base.$bp-phone) {
+        margin-left: 0;
+      }
     }
 
     &__2 {
@@ -75,6 +97,12 @@
     color: var(--color-white);
     // column-gap: 2rem;
     grid-column: span 2;
+
+    @include base.query(base.$bp-phone) {
+      grid-template-columns: 30rem;
+      grid-column: span 1;
+      text-align: left;
+    }
   }
 
   .user-review {
@@ -89,12 +117,21 @@
       border-radius: 10px;
       align-items: center;
 
+      @include base.query(base.$bp-phone) {
+        width: 40rem;
+        height: 30rem;
+      }
+
       &__2 {
         margin-top: 1.6rem;
       }
 
       &__3 {
         margin-top: 3.2rem;
+
+        @include base.query(base.$bp-phone) {
+          margin-top: 1.6rem;
+        }
       }
     }
 
@@ -118,6 +155,10 @@
       margin-left: 0.8rem;
       line-height: 1.2em;
 
+      @include base.query(base.$bp-phone) {
+        font-size: 2.1rem;
+      }
+
       &-name {
       }
       &-buyer {
@@ -132,6 +173,10 @@
       font-size: 1.65rem;
       font-weight: 500;
       line-height: 1.4em;
+
+      @include base.query(base.$bp-phone) {
+        font-size: 2.1rem;
+      }
     }
   }
 }

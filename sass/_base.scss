@@ -1,3 +1,18 @@
+/////////////////////////
+// Sass
+
+// Variables
+$bp-phone: 27.5em; // 440px
+$bp-tablet: 49.5em; // 792px
+$bp-laptop: 75em; // 1200px
+
+// Mixins
+@mixin query($bp-phone) {
+  @media only screen and (max-width: $bp-phone) {
+    @content;
+  }
+}
+
 // CSS Custom Properties
 :root {
   // ## Colors
@@ -28,6 +43,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @include query($bp-phone) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -46,10 +65,28 @@ body {
   justify-content: center;
   align-items: center;
 
+  @include query($bp-laptop) {
+    height: 100vh;
+    width: fit-content;
+  }
+
+  @include query($bp-phone) {
+    height: auto;
+    width: 100vw;
+    text-align: center;
+  }
+
   background-image: url("../images/bg-pattern-top-desktop.svg"),
     url("../images/bg-pattern-bottom-desktop.svg");
 
   background-position-x: 0%, right;
   background-position-y: 0%, bottom;
   background-repeat: no-repeat;
+
+  @include query($bp-laptop) {
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+
+    background-position-x: 0%;
+    background-position-y: 0%;
+  }
 }
