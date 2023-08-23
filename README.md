@@ -11,7 +11,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: [Github Pages](ReplaceWithActualLiveUrl)
+- Live Site URL: [Github Pages](https://pkthunder87.github.io/social-proof/)
 
 ### Built with
 
